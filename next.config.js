@@ -4,5 +4,9 @@ const nextConfig = {
     domains: ['m.media-amazon.com', 'images.remotePatterns', 'firebasestorage.googleapis.com'],
   },
 };
-
+module.exports = {
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
+};
 module.exports = nextConfig;
