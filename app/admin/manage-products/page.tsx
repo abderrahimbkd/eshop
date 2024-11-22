@@ -1,6 +1,6 @@
-import getProducts from '@/actions/getProducts';
 import ManageProductsClient from './manageProductsClient';
 import { getCurrentUser } from '@/actions/getCurrentUser';
+import getProducts from '@/actions/getProducts';
 import NullData from '@/app/components/NullData';
 
 const ManageProducts = async () => {
