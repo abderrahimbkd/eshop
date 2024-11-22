@@ -1,0 +1,18 @@
+import { getCurrentUser } from '@/actions/getCurrentUser';
+import FormWrap from '../FormWarp';
+import Container from '../components/nav/Container';
+import LoginForm from './LoginForm';
+
+const Login = async () => {
+  const currentUser = await getCurrentUser();
+
+  return (
+    <Container>
+      <FormWrap>
+        <LoginForm currentUser={currentUser} />
+      </FormWrap>
+    </Container>
+  );
+};
+
+export default Login;
